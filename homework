@@ -1,1 +1,22 @@
-#어떻게하더라
+3장 퀴즈
+#1번
+sizeof(a) , typeid(a).name()
+#2번
+  #include <iostream> - cpp 전용
+  #include <stdio.h> - c언어 + cpp  "iu.h"는 내가 만든 헤더파일(?)
+#3번
+2 3 6
+#4번
+더하기 ..
+1 2 1
+#5번
+0
+#6번
+T
+F
+T
+F
+#7번
+cin >> a >> b ; ( " " 삭제 )
+cout << "정수부의 합은" << (int)a + (int)b << " 입니다." << endl;
+#8번
