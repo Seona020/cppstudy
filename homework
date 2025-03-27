@@ -1,37 +1,66 @@
 3장 퀴즈
 #1번
 sizeof(a) , typeid(a).name()
+
 #2번
   #include <iostream> - cpp 전용
   #include <stdio.h> - c언어 + cpp  "iu.h"는 내가 만든 헤더파일(?)
+
 #3번
 2 3 6
+
 #4번
-더하기 ..
+--,++는 변수를 1씩 감소시키거나 증가시키는 연산자!
+앞에 붙으면 변수 값을 먼저 바꾸고 반환,
+뒤에붙으면 변수를 반환한 후 증가or감소.
+
 1 2 1
+
 #5번
 0
+
 #6번
 T
 F
 T
 F
+
 #7번
 cin >> a >> b ; ( " " 삭제 )
-cout << "정수부의 합은" << (int)a + (int)b << " 입니다." << endl;
+cout << "정수부의 합은" << (int)a + (int)b << " 입니다." << endl; 
+
 #8번
 #include <iostream>
 using namespace std;
 
-int main(){
+int main() {
 
+	double fd, cd;
+	cout << "화씨온도입력: ";
+	cin >> fd;
+	cd = (fd - 32) * 5 / 9;
 
-    double fd, cd;
-    cout << "화씨온도입력: ";
-    cin >> fd;
-    /* 여기코딩*/
-    cd = (fd-32)*(5/9);
-    cout << "섭씨온도는" << cd << " 입니다." << endl;
+	cout.precision(5);
+	cout << fixed;
+	cout << "섭씨온도는" << cd << " 입니다." << endl;
 
-    return 0;
+	return 0;
+}
+
+#9번
+#include <limits> 추가
+cout << numeric_limits<long long>::max() << endl;
+cout << numeric_limits<long long>::min() << endl; ( <> 안에 long long 추가)
+
+#10번
+#include <iostream>
+using namespace std;
+int main() { 
+    int a;
+    cout << "정수 입력: ";
+    cin >> a;
+    cout << showbase;
+    cout << oct << a << endl;
+    cout << hex << a << endl;
+ return 0;
 }
